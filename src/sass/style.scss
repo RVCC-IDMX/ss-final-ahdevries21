@@ -22,10 +22,8 @@ body{
 }
 
 .container{
-    max-width: 80ch;
     margin: 8vh auto;
 }
-
 h1,h2, h3{
     font-family: var(--ff-heading);
 }
@@ -89,22 +87,23 @@ header a{
 
 nav{
     max-width:auto;
-    text-align:center;
-    max-width: 100%;
     position:relative;
     padding: 5px;
-    position: sticky;
+    background-color:var(--clr-primary-300);
+    border: 5px solid var(--clr-primary-400);
+    text-align:center;
 }
 
 nav ul li{
     list-style-type:none;
     display:inline-flex;
-    font-size: 15px;
-    margin:3px;
+    font-size: 20px;
+    margin:5px;
     background-color: var(--clr-primary-300);
-    padding:8px;
+    padding:5px;
     border-radius: 10px;
     font-weight: 600;
+
  }
 
 nav ul li a{
@@ -127,12 +126,14 @@ nav ul li:hover{
 
 #about h2{
     border-left:5px solid var(--clr-primary-400);
+    padding-inline-start: 10px;
 }
 
 #about blockquote{
     border-left:5px solid var(--clr-primary-400);
     padding: 5px;
     border-radius: 10px;
+    padding-inline-start: 10px;
 }
 
 #about a{
@@ -143,37 +144,43 @@ nav ul li:hover{
 
 .container ul li{
     list-style-type: none;
-    padding-inline: 15px;
-    padding-block: 15px;
-    background-color: var(--clr-primary-400);
+    padding-block: 5px;
+    padding-inline: 3px;
+    background-color: var(--clr-primary-500);
     color: var(--clr-primary-200);
     display: inline-block;
     margin-block: 5px;
+    border-radius: 10px;
+}
+.container ul li:hover{
+    color: var(--clr-primary-200);
+    background-color: var(--clr-primary-400);
 }
 
 #guidelines{
-    background-color: var(--clr-primary-400);
-    color: var(--clr-primary-100);
-    padding-inline: 10px;
-    padding-block: 1px;
+    background-color: var(--clr-primary-300);
+    color: var(--clr-primary-500);
+    padding-inline: 15px;
+    padding-block: 10px;
     margin-block: 20px;
     border-radius:5px;
 }
 #guidelines h2{
-    border-left: 3px solid var(--clr-primary-100);
+    border-left: 3px solid var(--clr-primary-500);
+    padding-inline-start: 10px;
 }
 
 #guidelines a{
-    color:var(--clr-primary-100);
     text-decoration: none;
     font-weight: 600;
+    color:var(--clr-primary-500);
 }
 
 .link-guidelines{
     padding:10px;
     margin:5px;
-    background-color: var(--clr-primary-300);
-    color: var(--clr-primary-500);
+    background-color: var(--clr-primary-400);
+    color: var(--clr-primary-200);
     border-radius: 10px; 
 }
 
