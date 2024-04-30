@@ -82,4 +82,5 @@ Use this as the "Publish command" if needed by hosting services such as Netlify.
 
 ### CSS Reset/normalize Libray
 CSS import - @import '~@csstools/normalize.css';
-Github Link
+Github Link: https://github.com/csstools/normalize.css
+Terminal Command: 
