@@ -38,16 +38,18 @@ svg {
 
 /* Main CSS here */
 .skip-link {
-  position: relative;
+  position: absolute;
   color: var(--clr-primary-500);
   text-decoration: none;
   background-color: var(--clr-primary-300);
   padding: 10px;
   font-weight: 600;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
 }
 
 .skip-link:hover {
-  background-color: var(--clr-primary-200);
+  transform: translateY(0%);
 }
 
 header {
@@ -148,4 +150,42 @@ nav ul li:hover {
   color: var(--clr-primary-200);
   display: inline-block;
   margin-block: 5px;
+}
+
+#guidelines {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-primary-100);
+  padding-inline: 10px;
+  padding-block: 1px;
+  margin-block: 20px;
+  border-radius: 5px;
+}
+
+#guidelines h2 {
+  border-left: 3px solid var(--clr-primary-100);
+}
+
+#guidelines a {
+  color: var(--clr-primary-100);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-guidelines {
+  padding: 10px;
+  margin: 5px;
+  background-color: var(--clr-primary-300);
+  color: var(--clr-primary-500);
+  border-radius: 10px;
+}
+
+.link-guidelines:hover {
+  background-color: var(--clr-primary-200);
+  color: var(--clr-primary-500);
+}
+
+#contribute {
+  max-width: 100%;
+  padding-block: 10px;
+  padding-inline: 10px;
 }
