@@ -1,1 +1,120 @@
 /* main */
+
+/* Typography */
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Guntur:wght@300;400;500;600;700&display=swap");
+
+/* Custom Properties */
+:root{
+    --ff-heading: "Domine";
+    --ff-body:"Hind Guntur";
+    --clr-primary-100: #fffdf7;
+    --clr-primary-200: #ffd9da;
+    --clr-primary-300: #84bc9c;
+    --clr-primary-400: #002500;
+    --clr-primary-500: #0a2342;
+}
+
+body{
+    background-color: var(--clr-primary-100);
+    padding: 0 0.5em;
+}
+
+.container{
+    max-width: 80ch;
+    margin: 8vh auto;
+}
+
+h1,h2, h3{
+    font-family: var(--ff-heading);
+}
+
+
+p,ul,li,a{
+    font-family:var(--ff-body);  
+}
+
+svg{
+    width: 0.75em;
+}
+
+/* Main CSS here */
+.skip-link{
+    position:relative;
+    color:var(--clr-primary-500);
+    text-decoration: none;
+    background-color:var(--clr-primary-300);
+    padding:10px;
+    font-weight: 600;
+ }
+ .skip-link:hover{
+    background-color:var(--clr-primary-200);
+ }
+ 
+header{
+     background-image: url("https://images.unsplash.com/photo-1495195129352-aeb325a55b65?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+     background-size:cover;
+     max-width:100%;
+     text-align:center;
+     padding-block:50px;
+     margin-block:10px;
+     color: var(--clr-primary-500);
+}
+header h1{
+    font-size: clamp(2rem, 1rem + 8vw,7rem);
+}
+header p,a{
+    color: var(--clr-primary-500);
+}
+header a{
+    text-decoration:none;
+    font-weight: 600;
+}
+
+.link-github{
+  padding:10px;
+  margin:5px;
+  color: var(--clr-primary-500);
+  background-color: var(--clr-primary-300);
+  border-radius: 10px;
+}
+
+.link-github:hover{
+    background-color: var(--clr-primary-200);
+    box-shadow: 5px 5px 5px gray;
+}
+
+nav{
+    max-width:auto;
+    text-align:center;
+    max-width: 100%;
+    position:relative;
+    padding: 5px;
+    position: sticky;
+}
+
+nav ul li{
+    list-style-type:none;
+    display:inline-flex;
+    font-size: 15px;
+    margin:3px;
+    background-color: var(--clr-primary-300);
+    padding:8px;
+    border-radius: 10px;
+    font-weight: 600;
+ }
+
+nav ul li a{
+    color:var(--clr-primary-500);
+    text-decoration:none;
+}
+
+nav ul li:hover{
+    background-color: var(--clr-primary-200);
+    box-shadow: 5px 5px 5px gray;
+}
+
+#about h2{
+    border-left:5px solid var(--clr-primary-400);
+}
