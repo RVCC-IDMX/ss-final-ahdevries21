@@ -19,12 +19,14 @@
 body{
     background-color: var(--clr-primary-100);
     padding: 0 0.5em;
+    line-height: 2 em;
 }
 
 .container{
-    margin: 8vh auto;
+    margin: 10vh auto;
+    padding: 0 0.75em;
 }
-h1,h2, h3{
+h1,h2, h3, h4{
     font-family: var(--ff-heading);
 }
 
@@ -38,19 +40,9 @@ svg{
 }
 
 /* Main CSS here */
-.skip-link{
-    position:absolute;
-    color:var(--clr-primary-500);
-    text-decoration: none;
-    background-color:var(--clr-primary-300);
-    padding:10px;
-    font-weight: 600;
-    transform: translateY(-100%);
-    transition: transform 0.3s;
- }
- .skip-link:hover{
-    transform: translateY(0%);
- }
+
+
+
  
 header{
      background-image: url("https://images.unsplash.com/photo-1495195129352-aeb325a55b65?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
@@ -89,8 +81,6 @@ nav{
     max-width:auto;
     position:relative;
     padding: 5px;
-    background-color:var(--clr-primary-300);
-    border: 5px solid var(--clr-primary-400);
     text-align:center;
 }
 
@@ -100,7 +90,8 @@ nav ul li{
     font-size: 20px;
     margin:5px;
     background-color: var(--clr-primary-300);
-    padding:5px;
+    padding-inline:20px;
+    padding-block-start:3px;
     border-radius: 10px;
     font-weight: 600;
 
@@ -113,7 +104,6 @@ nav ul li a{
 
 nav ul li:hover{
     background-color: var(--clr-primary-200);
-    box-shadow: 5px 5px 5px gray;
 }
 
 #about{
@@ -127,6 +117,7 @@ nav ul li:hover{
 #about h2{
     border-left:5px solid var(--clr-primary-400);
     padding-inline-start: 10px;
+    font-size: 30px;
 }
 
 #about blockquote{
@@ -134,6 +125,12 @@ nav ul li:hover{
     padding: 5px;
     border-radius: 10px;
     padding-inline-start: 10px;
+    border-right:5px solid var(--clr-primary-400);
+    text-align:center;
+}
+#about blockquote strong{
+    font-size: 20px;
+    text-align:center;
 }
 
 #about a{
@@ -142,7 +139,7 @@ nav ul li:hover{
     color: var(--clr-primary-500);
 }
 
-.container ul li{
+ #about .container ul li{
     list-style-type: none;
     padding-block: 5px;
     padding-inline: 3px;
@@ -152,22 +149,24 @@ nav ul li:hover{
     margin-block: 5px;
     border-radius: 10px;
 }
-.container ul li:hover{
+#about .container ul li:hover{
     color: var(--clr-primary-200);
     background-color: var(--clr-primary-400);
 }
 
 #guidelines{
-    background-color: var(--clr-primary-300);
+    background-color: var(--clr-primary-200);
     color: var(--clr-primary-500);
     padding-inline: 15px;
     padding-block: 10px;
     margin-block: 20px;
     border-radius:5px;
+    border: 8px dotted var(--clr-primary-400);
 }
 #guidelines h2{
-    border-left: 3px solid var(--clr-primary-500);
+    border-left: 5px solid var(--clr-primary-500);
     padding-inline-start: 10px;
+    font-size: 30px;
 }
 
 #guidelines a{
@@ -177,20 +176,48 @@ nav ul li:hover{
 }
 
 .link-guidelines{
-    padding:10px;
-    margin:5px;
-    background-color: var(--clr-primary-400);
-    color: var(--clr-primary-200);
-    border-radius: 10px; 
+    background-color: var(--clr-primary-300);
+    padding: 10px;
+    border-radius: 10px;
 }
 
-.link-guidelines:hover{
-    background-color: var(--clr-primary-200);
+
+#contribute{
+    background-image: url("");
+    background-size: cover;
+    max-height: 100%;
     color: var(--clr-primary-500);
 }
 
-#contribute{
-    max-width:100%;
-    padding-block:10px;
-    padding-inline: 10px;
+
+#contribute h2{
+    border-left: 5px solid var(--clr-primary-500);
+    padding-inline-start: 10px;
+    font-size: 30px;
+}
+
+#contribute a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#files{
+
+}
+
+#files h3{
+    font-variant: small-caps;
+    text-decoration:underline 2px;
+}
+
+#files a{
+    text-decoration: none;
+    display:inline-flex;
+    margin-inline: 15px;
+}
+aside{
+    display:inline-flex;
+    grid-template-columns: 10px;
+    column-gap:5px;
+    place-items: center;
 }
