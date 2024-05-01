@@ -81,6 +81,8 @@ Use this as the "Publish command" if needed by hosting services such as Netlify.
 [Code for Bell's Build Excellent Websites (the source for the Fluid CSS code linked above) ](https://glitch.com/edit/#!/build-excellent-websites)
 
 ### CSS Reset/normalize Libray
-CSS import - @import '~@csstools/normalize.css';
+CSS import - @import '~@csstools/normalize.css'
+
 Github Link: https://github.com/csstools/normalize.css
-Terminal Command: 
+
+Terminal Command: npm install @csstools/normalize.css --save
