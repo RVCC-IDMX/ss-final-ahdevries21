@@ -100,15 +100,14 @@ header .link-github:hover{
 nav{
     position:relative;
     padding: 5px;
-    text-align:center;
-    margin:0 auto;
+    text-align: center;
 }
 
 nav ul li{
     list-style-type:none;
     display:inline-flex;
+    margin-block:5px;
     font-size: 20px;
-    margin:8px auto;
     background-color: var(--clr-primary-300);
     padding-inline:20px;
     padding-block-start:3px;
@@ -284,8 +283,8 @@ aside{
 
 #styles ul li{
     list-style-type:none;
-    display: inline-flex;
-    margin:5px;
+    display: inline-block;
+    margin-block: 3px;
     color:var(--clr-primary-500);
 }
 
@@ -323,8 +322,8 @@ aside{
     margin-block-start:10px;
 }
 .page-footer .container ul li{
-    display:inline-flex;
-    margin:10px;
+    display:inline-block;
+    margin-block:10px;
     text-align:center;
     color: var(--clr-primary-500);
     background-color: var(--clr-primary-300);
