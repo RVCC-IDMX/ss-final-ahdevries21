@@ -38,6 +38,23 @@ svg {
 }
 
 /* Main CSS here */
+.skip-link {
+  position: absolute;
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  line-height: 1;
+  font-size: 1.25rem;
+  background-color: var(--clr-primary-300);
+  color: var(--clr-primary-500);
+  transform: translateY(-100%);
+  transition: transform 250ms ease-in;
+  text-decoration: none;
+}
+
+.skip-link:hover {
+  transform: translateY(0);
+}
+
 header {
   background-image: url("https://images.unsplash.com/photo-1495195129352-aeb325a55b65?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
@@ -61,7 +78,7 @@ header a {
   font-weight: 600;
 }
 
-.link-github {
+header .link-github {
   padding: 10px;
   margin: 5px;
   color: var(--clr-primary-500);
@@ -75,17 +92,17 @@ header a {
 }
 
 nav {
-  max-width: auto;
   position: relative;
   padding: 5px;
   text-align: center;
+  margin: 0 auto;
 }
 
 nav ul li {
   list-style-type: none;
   display: inline-flex;
   font-size: 20px;
-  margin: 5px;
+  margin: 8px auto;
   background-color: var(--clr-primary-300);
   padding-inline: 20px;
   padding-block-start: 3px;
@@ -123,6 +140,7 @@ nav ul li:hover {
   padding-inline-start: 10px;
   border-right: 5px solid var(--clr-primary-400);
   text-align: center;
+  background-color: var(--clr-primary-200);
 }
 
 #about blockquote strong {
@@ -153,17 +171,17 @@ nav ul li:hover {
 }
 
 #guidelines {
-  background-color: var(--clr-primary-200);
-  color: var(--clr-primary-500);
+  background-color: var(--clr-primary-400);
+  color: var(--clr-primary-100);
   padding-inline: 15px;
   padding-block: 10px;
   margin-block: 20px;
   border-radius: 5px;
-  border: 8px dotted var(--clr-primary-400);
+  border: 8px dotted var(--clr-primary-200);
 }
 
 #guidelines h2 {
-  border-left: 5px solid var(--clr-primary-500);
+  border-left: 5px solid var(--clr-primary-100);
   padding-inline-start: 10px;
   font-size: 30px;
 }
@@ -171,24 +189,34 @@ nav ul li:hover {
 #guidelines a {
   text-decoration: none;
   font-weight: 600;
-  color: var(--clr-primary-500);
+  color: var(--clr-primary-100);
 }
 
-.link-guidelines {
+#guidelines .link-guidelines {
   background-color: var(--clr-primary-300);
   padding: 10px;
   border-radius: 10px;
-}
-
-#contribute {
-  background-image: url("");
-  background-size: cover;
-  max-height: 100%;
   color: var(--clr-primary-500);
 }
 
+#guidelines .link-guidelines:hover {
+  background-color: var(--clr-primary-200);
+  color: var(--clr-primary-500);
+}
+
+#contribute {
+  background-image: url("https://images.unsplash.com/photo-1551970634-747846a548cb?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  max-width: 100%;
+  padding-block: 20px;
+}
+
+#contribute .container {
+  color: var(--clr-primary-100);
+}
+
 #contribute h2 {
-  border-left: 5px solid var(--clr-primary-500);
+  border-left: 5px solid var(--clr-primary-100);
   padding-inline-start: 10px;
   font-size: 30px;
 }
@@ -196,6 +224,7 @@ nav ul li:hover {
 #contribute a {
   text-decoration: none;
   font-weight: 600;
+  color: var(--clr-primary-100);
 }
 
 #files h3 {
@@ -206,12 +235,65 @@ nav ul li:hover {
 #files a {
   text-decoration: none;
   display: inline-flex;
-  margin-inline: 15px;
+  margin: 10px;
+  color: var(--clr-primary-500);
+  background-color: var(--clr-primary-300);
+  padding-inline: 10px;
+  padding-block: 5px;
+  border-radius: 10px;
+}
+
+#files a:hover {
+  background-color: var(--clr-primary-200);
 }
 
 aside {
+  margin: 0 auto;
   display: inline-flex;
-  grid-template-columns: 10px;
-  column-gap: 5px;
-  place-items: center;
+}
+
+.profile {
+  text-align: center;
+  background-color: var(--clr-primary-400);
+  color: var(--clr-primary-100);
+  padding-block: 10px;
+}
+
+#profile-title {
+  font-size: 30px;
+}
+
+.profile ul li {
+  list-style-type: none;
+  display: inline-flex;
+  margin: 5px;
+}
+
+.profile a {
+  text-decoration: none;
+  color: white;
+}
+
+#styles {
+  text-align: center;
+  background-color: var(--clr-primary-200);
+}
+
+#styles ul li {
+  list-style-type: none;
+  display: inline-flex;
+  margin: 5px;
+}
+
+.profile-title,
+.profile-author,
+.profile-twitter,
+.profile-website {
+  font-size: 15px;
+}
+
+.page-footer .container ul li {
+  display: inline-flex;
+  margin: 5px;
+  text-align: center;
 }
