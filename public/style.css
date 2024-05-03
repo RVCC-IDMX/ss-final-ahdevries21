@@ -49,12 +49,19 @@ svg {
   transform: translateY(-100%);
   transition: transform 250ms ease-in;
   text-decoration: none;
+  padding-block: 15px;
 }
 
 .skip-link:hover {
   transform: translateY(0);
 }
 
+@media only screen and (max-width: 900px) {
+  .skip-link {
+    transform: none;
+    transition: none;
+  }
+}
 header {
   background-image: url("https://images.unsplash.com/photo-1495195129352-aeb325a55b65?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
@@ -86,9 +93,8 @@ header .link-github {
   border-radius: 10px;
 }
 
-.link-github:hover {
+header .link-github:hover {
   background-color: var(--clr-primary-200);
-  box-shadow: 5px 5px 5px gray;
 }
 
 nav {
@@ -249,7 +255,6 @@ nav ul li:hover {
 
 aside {
   margin: 0 auto;
-  display: inline-flex;
 }
 
 .profile {
@@ -257,6 +262,7 @@ aside {
   background-color: var(--clr-primary-400);
   color: var(--clr-primary-100);
   padding-block: 10px;
+  max-width: 100% auto;
 }
 
 #profile-title {
@@ -269,6 +275,10 @@ aside {
   margin: 5px;
 }
 
+.profile ul li a {
+  font-weight: 600;
+}
+
 .profile a {
   text-decoration: none;
   color: white;
@@ -276,13 +286,33 @@ aside {
 
 #styles {
   text-align: center;
-  background-color: var(--clr-primary-200);
+  padding-block: 10px;
 }
 
 #styles ul li {
   list-style-type: none;
   display: inline-flex;
   margin: 5px;
+  color: var(--clr-primary-500);
+}
+
+.link-allstyles {
+  background-color: var(--clr-primary-300);
+  text-decoration: none;
+  color: var(--clr-primary-500);
+  padding-block: 10px;
+  padding-inline: 5px;
+  border-radius: 10px;
+}
+
+.link-allstyles:hover {
+  background-color: var(--clr-primary-200);
+}
+
+#styles ul li a {
+  text-decoration: none;
+  color: var(--clr-primary-500);
+  margin: 0 auto;
 }
 
 .profile-title,
@@ -292,8 +322,40 @@ aside {
   font-size: 15px;
 }
 
+.page-footer {
+  background-image: url("https://images.unsplash.com/photo-1515549832467-8783363e19b6?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  text-align: center;
+  padding-block-start: 1px;
+  padding-block-end: 5px;
+  margin-block-start: 10px;
+}
+
 .page-footer .container ul li {
   display: inline-flex;
-  margin: 5px;
+  margin: 10px;
   text-align: center;
+  color: var(--clr-primary-500);
+  background-color: var(--clr-primary-300);
+  padding-inline: 10px;
+  padding-block: 5px;
+  border-radius: 10px;
+}
+
+.page-footer .container a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.page-footer .container ul li:hover {
+  background-color: var(--clr-primary-200);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01 !important;
+    scroll-behavior: auto !important;
+  }
 }
