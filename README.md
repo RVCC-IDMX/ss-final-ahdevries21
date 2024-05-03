@@ -80,6 +80,8 @@ Use this as the "Publish command" if needed by hosting services such as Netlify.
 
 [Code for Bell's Build Excellent Websites (the source for the Fluid CSS code linked above) ](https://glitch.com/edit/#!/build-excellent-websites)
 
+[Skip-Link](https://www.makethingsaccessible.com/guides/creating-a-skip-to-content-link/)
+
 ### CSS Reset/normalize Libray
 CSS import - @import '~@csstools/normalize.css'
 
